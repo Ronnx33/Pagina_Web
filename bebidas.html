@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bebidas</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+
+  <div class="contenido-interno">
+    
+  <section class="banner">
+    <h2>Productos en marcas Populares</h2>
+    <div class="carousel">
+      <div class="product" data-name="Cola" data-price="2.00">
+        <img src="http://localhost/crud_img/uploads/1362433058.png" alt="Sprite ">
+         <p>Cola Pepsi 200 ml  - $0.50</p>
+       </div>
+      <div class="product" data-name="Cola" data-price="2.00">
+        <img src="http://localhost/crud_img/uploads/1304745253.png" alt="colas" >
+        <p>Coca Cola 200 ml  - $0.50</p>
+      </div>
+      <div class="product" data-name="Cola" data-price="2.00">
+        <img src="http://localhost/crud_img/uploads/444895085.png" alt="Fanta">
+         <p>Cola Fanta 200 ml  - $0.50</p>
+       </div>
+       <div class="product" data-name="Cola" data-price="2.00">
+        <img src="http://localhost/crud_img/uploads/588967289.png" alt="FuzeTea">
+        
+         <p>Fuze Tea - $0.60</p>
+       </div>
+       <div class="product" data-name="Cola" data-price="2.00">
+        <img src="http://localhost/crud_img/uploads/1299650584.png" alt="FuzeTea">
+        
+         <p>Cola Pepsi - $0.60</p>
+       </div>
+
+       
+      <!-- Agrega más productos aquí -->
+    </div>
+    
+  </section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Producto</h3>
+      <p id="modalPrice">$0.00</p>
+      <button id="addToCartBtn">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <script src="../JS/main.js"></script>
+</body>
+</html>

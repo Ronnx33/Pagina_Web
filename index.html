@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Agrega esto en el <head> de tu HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mafer's | Tienda Online</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/estilos.css">
+
+
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="top-header">
+    <div class="header-container">
+      <div class="header-left">
+        <input type="text" placeholder="¿Qué estás buscando?">
+        <i class="fas fa-search"></i>
+      </div>
+  
+      <div class="header-center">
+        <h1 class="logo">MAFER'S</h1>
+      </div>
+  
+      <div class="header-right">
+        <div class="icon-group">
+          <a href="#" class="icon-link">
+            <i class="fas fa-user"></i>
+            <span>Ingresar</span>
+          </a>
+          <a href="#" class="icon-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Carrito</span>
+          </a>
+          <a href="#" class="icon-link">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ubicación</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+    
+        <li class="dropdown">
+          <a href="#">Productos</a>
+          <ul class="dropdown-menu">
+            <li><a href="../html/bebidas.html">Bebidas</a></li>
+            <li><a href="../html/libreria.html">Librería</a></li>
+            <li><a href="../html/limpieza.html">Limpieza</a></li>
+          </ul>
+        </li>
+    
+        <li class="dropdown">
+          <a href="#">Categorías</a>
+          <ul class="dropdown-menu">
+            <li><a href="../html/electronica.html">Electrónica</a></li>
+            <li><a href="../html/hogar.html">Hogar</a></li>
+            <li><a href="../html/ropa.html">Ropa</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Contenido dinámico -->
+  </header>
+  
+  <div id="dynamic-content"></div>
+  <!-- Carrusel de productos destacados -->
+  <section class="banner">
+    <h2>¡Ofertas de la semana!</h2>
+    <div class="carousel">
+      <div class="product">
+        <img src="img/cola.jpg" alt="Cola">
+        <p>Cola Nacional 1L - $1.50</p>
+      </div>
+      <div class="product">
+        <img src="img/cuaderno.jpg" alt="Cuaderno">
+        <p>Cuaderno Raya 100 hojas - $2.00</p>
+      </div>
+      <div class="product">
+        <img src="img/lapicero.jpg" alt="Lapicero">
+        <p>Lapicero Azul Pack x3 - $1.20</p>
+      </div>
+    </div>
+  </section>
+  <section class="ofertas-semana">
+    <h2>Ofertas de la semana</h2>
+    <div class="carrusel-container">
+      <div class="carrusel-ofertas">
+        <!-- Clon de la última imagen (al inicio) -->
+        <a href="oferta5.html" class="oferta"><img src="http://localhost/crud_img/uploads/620081227.png" alt="Oferta 5"></a>
+  
+        <!-- Imágenes reales -->
+        <a href="oferta1.html" class="oferta"><img src="https://crystalzoom.com/wp-content/uploads/2022/02/ofertas1.png" alt="Oferta 1"></a>
+        <a href="oferta2.html" class="oferta"><img src="http://localhost/crud_img/uploads/212293636.jpg" alt="Publicidad1"></a>
+        <a href="oferta3.html" class="oferta"><img src="http://localhost/crud_img/uploads/212293636.jpg" alt="Oferta 3"></a>
+        <a href="oferta4.html" class="oferta"><img src="http://localhost/crud_img/uploads/212293636.jpg" alt="Oferta 4"></a>
+        <a href="oferta5.html" class="oferta"><img src="http://localhost/crud_img/uploads/620081227.png" alt="Oferta 5"></a>
+  
+        <!-- Clon de la primera imagen (al final) -->
+        <a href="oferta1.html" class="oferta"><img src="https://crystalzoom.com/wp-content/uploads/2022/02/ofertas1.png" alt="Oferta 1"></a>
+      </div>
+    </div>
+    <div class="indicadores">
+      <span class="activo" data-index="0"></span>
+      <span data-index="1"></span>
+      <span data-index="2"></span>
+      <span data-index="3"></span>
+      <span data-index="4"></span>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Categorías -->
+  <section class="categories">
+    <h2>Categorías populares</h2>
+    <div class="category-grid">
+      <div class="category-item">
+        <i class="fas fa-utensils"></i>
+        <p>Bebidas</p>
+      </div>
+      <div class="category-item">
+        <i class="fas fa-book"></i>
+        <p>Librería</p>
+      </div>
+      <div class="category-item">
+        <i class="fas fa-tags"></i>
+        <p>Ofertas</p>
+      </div>
+      <div class="category-item">
+        <i class="fas fa-box-open"></i>
+        <p>Todos los productos</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Mafer's. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  </footer>
+  
+  <script src="../JS/main.js"></script>
+</body>
+</html>
